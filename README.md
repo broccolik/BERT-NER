@@ -22,6 +22,8 @@ BERT-NER
 |____ BERT_NER.py		    # mian code
 |____ conlleval.pl		    # eval code
 |____ run_ner.sh    		    # run model and eval result
+|____BERT_NER_pb.py   		    # run model and eval result and transfer ckpt to saved model (pb)
+|____ner_local_pb.py         #load pb and predict
 
 ```
 
