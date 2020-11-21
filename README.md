@@ -1,4 +1,7 @@
 # BERT-NER
+对应的博客介绍：[BERT微调进行命名实体识别并将模型保存为pb形式](https://blog.csdn.net/broccoli2/article/details/109894132)
+
+
 BERT作为编码器，分别使用softmax和CRF作为解码器。数据集为行政处罚领域数据，本人分别训练过BERT+softmax和BERT+CRF模型，对比发现CRF解码效果较好，数据太少，目前未做评价。
 模型预测结果最终保存为了json格式，如下：
 ```
@@ -74,6 +77,9 @@ perl conlleval.pl -d '\t' < ./output/result_dir/label_test.txt
 ```
 
 核心代码为开源某个仓库的，忘了是哪个，我修改了部分代码，有知道的可以联系我，我给补上引用~
+
+嗯哼，来个star吧~
+
 ### reference:
 
 [1] https://arxiv.org/abs/1810.04805
